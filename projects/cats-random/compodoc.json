@@ -1,0 +1,6 @@
+{
+  "tsconfig": "./tsconfig.json",
+  "name": "Web Base",
+  "exportFormat": "html",
+  "output": "./dist/docs"
+}

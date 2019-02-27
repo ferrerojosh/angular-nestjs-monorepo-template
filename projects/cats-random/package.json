@@ -1,0 +1,50 @@
+{
+  "name": "web-base",
+  "version": "0.1.0",
+  "description": "Base web application (NesJS + Angular) that uses one single package.json",
+  "scripts": {
+    "build": "concurrently 'npm run build:api' 'npm run build:web'",
+    "build:api": "tsc -p tsconfig.json",
+    "build:web": "ng build --prod",
+    "build:docs": "compodoc src -c compodoc.json",
+    "serve": "concurrently 'npm run start:api' 'npm run start:web'",
+    "serve:api": "nodemon",
+    "serve:web": "ng serve",
+    "serve:docs": "compodoc src -c compodoc.json -w -s"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
+    "@compodoc/compodoc": "^1.1.8",
+    "@nestjs/common": "^5.4.0",
+    "@nestjs/core": "^5.4.0",
+    "@nestjs/typeorm": "^5.3.0",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.3.3",
+    "tslib": "^1.9.0",
+    "typeorm": "^0.2.14",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "~7.3.3",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
+    "@types/express": "^4.16.1",
+    "@types/node": "~8.9.4",
+    "codelyzer": "^4.5.0",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "~7.0.0",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.2.2"
+  }
+}
