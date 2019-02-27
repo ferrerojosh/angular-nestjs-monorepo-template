@@ -1,6 +1,6 @@
 {
   "tsconfig": "./tsconfig.json",
-  "name": "Web Base",
+  "name": "Cats Random",
   "exportFormat": "html",
   "output": "./dist/docs"
 }
