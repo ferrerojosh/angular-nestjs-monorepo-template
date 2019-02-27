@@ -1,7 +1,7 @@
 {
-  "name": "web-base",
+  "name": "cats-random",
   "version": "0.1.0",
-  "description": "Base web application (NesJS + Angular) that uses one single package.json",
+  "description": "A random cats application",
   "scripts": {
     "build": "concurrently 'npm run build:api' 'npm run build:web'",
     "build:api": "tsc -p tsconfig.json",
