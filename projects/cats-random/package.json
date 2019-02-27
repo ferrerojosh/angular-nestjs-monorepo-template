@@ -7,7 +7,7 @@
     "build:api": "tsc -p tsconfig.json",
     "build:web": "ng build --prod",
     "build:docs": "compodoc src -c compodoc.json",
-    "serve": "concurrently 'npm run start:api' 'npm run start:web'",
+    "serve": "concurrently 'npm run serve:api' 'npm run serve:web'",
     "serve:api": "nodemon",
     "serve:web": "ng serve",
     "serve:docs": "compodoc src -c compodoc.json -w -s"
